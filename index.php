@@ -6,7 +6,6 @@ Author:       Chris Doerr
 Version:      1.0.0
 Author URI:   http://www.meomundo.com/
 */
-global $wpdb;
 
 if( !class_exists( 'EditorSearchBox' ) ) {
   
