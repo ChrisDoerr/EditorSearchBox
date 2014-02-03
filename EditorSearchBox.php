@@ -79,7 +79,7 @@ class EditorSearchBox {
  
     }
 
-    $html = ' <input type="text" name="s" id="EditorSearchBoxInput" />';
+    $html = ' <input type="text" name="s" id="EditorSearchBoxInput" onkeydown="if(event.keyCode===13){window.location=\'edit.php?post_status=all&post_type=' . $postType . '&action=-1&m=0&paged=1&mode=list&action2=-1&s=\'+encodeURIComponent(document.getElementById(\'EditorSearchBoxInput\').value);;return false;}" />';
 
     $html .= '<p><a href="javascript:void(0);" class="button-secondary" onclick="javascript:window.location=\'edit.php?post_status=all&post_type=' . $postType . '&action=-1&m=0&paged=1&mode=list&action2=-1&s=\'+encodeURIComponent(document.getElementById(\'EditorSearchBoxInput\').value);">' . _x( 'Search', 'esb' ) . "</a></p>\n";
 
